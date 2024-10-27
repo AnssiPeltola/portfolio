@@ -30,9 +30,9 @@ const About = () => {
 
           <div className="w-48 h-48 md:w-96 md:h-96 mt-10 z-10 relative mx-auto">
             <img
-              src="/profile.png"
+              src={`${process.env.PUBLIC_URL}/profile.png`}
               alt="Profile"
-              className="w-full h-full rounded-full object-cover"
+              class="w-full h-full rounded-full object-cover"
             />
           </div>
         </div>

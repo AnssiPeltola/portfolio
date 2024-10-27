@@ -23,7 +23,7 @@ const CVModal = ({ isOpen, onClose }) => {
           </button>
           <h1 className="text-2xl font-bold mb-4">My CV</h1>
           <iframe
-            src="/CV_Anssi_Peltola.pdf"
+            src={`${process.env.PUBLIC_URL}/CV_Anssi_Peltola.pdf`}
             width="100%"
             height="100%"
             className="flex-grow"
@@ -32,7 +32,7 @@ const CVModal = ({ isOpen, onClose }) => {
             loading="lazy"
           ></iframe>
           <a
-            href="/CV_Anssi_Peltola.pdf"
+            href={`${process.env.PUBLIC_URL}/CV_Anssi_Peltola.pdf`}
             download
             className="mt-4 bg-customOrange text-white px-4 py-2 rounded shadow-md transition-colors duration-300 hover:bg-orange-600"
           >
