@@ -26,7 +26,7 @@ const ContactMeModal = ({ isOpen, onClose }) => {
       className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50"
       onClick={handleOutsideClick}
     >
-      <div className="relative bg-ksuPurple p-4 md:p-8 rounded-lg shadow-lg w-10/12 md:w-2/3 lg:w-1/2 xl:w-1/3 text-white max-h-screen overflow-y-auto border-gradient">
+      <div className="relative bg-ksuPurple p-4 md:p-8 rounded-lg shadow-lg w-10/12 md:w-2/3 lg:w-3/4 xl:w-2/3 text-white max-h-screen overflow-y-auto border-gradient">
         <div className="flex justify-end">
           <button className="text-2xl font-bold text-white" onClick={onClose}>
             &times;
@@ -42,8 +42,8 @@ const ContactMeModal = ({ isOpen, onClose }) => {
               questions or opportunities.
             </p>
           </div>
-          <div className="grid grid-cols-1 gap-12 mt-10 lg:grid-cols-3">
-            <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-1">
+          <div className="grid grid-cols-1 gap-12 mt-10 lg:grid-cols-2 xl:grid-cols-3">
+            <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-1 xl:col-span-1">
               <div>
                 <span className="inline-block p-3 text-customOrange rounded-full bg-customOrange/20">
                   <svg
@@ -118,7 +118,7 @@ const ContactMeModal = ({ isOpen, onClose }) => {
                 <p className="mt-2 text-sm text-customOrange">+358400244925</p>
               </div>
             </div>
-            <div className="overflow-hidden rounded-lg lg:col-span-2 h-96 lg:h-auto">
+            <div className="overflow-hidden rounded-lg lg:col-span-2 xl:col-span-2 h-96 lg:h-80 xl:h-96">
               <iframe
                 width="100%"
                 height="100%"

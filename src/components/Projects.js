@@ -5,7 +5,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="mt-8 p-4 text-white mx-auto w-3/4 relative"
+      className="mt-8 p-4 text-white mx-auto w-3/4 relative z-20"
     >
       <h1 className="text-3xl font-bold text-center mb-8">Projects</h1>
       <a

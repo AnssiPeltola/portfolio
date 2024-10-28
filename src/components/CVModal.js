@@ -3,6 +3,8 @@ import React from "react";
 const CVModal = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
 
+  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
   return (
     <div
       id="modal-overlay"
@@ -22,22 +24,32 @@ const CVModal = ({ isOpen, onClose }) => {
             &times;
           </button>
           <h1 className="text-2xl font-bold mb-4">My CV</h1>
-          <iframe
-            src={`${process.env.PUBLIC_URL}/CV_Anssi_Peltola.pdf`}
-            width="100%"
-            height="100%"
-            className="flex-grow"
-            style={{ border: 0 }}
-            allowFullScreen=""
-            loading="lazy"
-          ></iframe>
-          <a
-            href={`${process.env.PUBLIC_URL}/CV_Anssi_Peltola.pdf`}
-            download
-            className="mt-4 bg-customOrange text-white px-4 py-2 rounded shadow-md transition-colors duration-300 hover:bg-orange-600"
-          >
-            Download CV
-          </a>
+          {isMobile ? (
+            <div className="flex flex-col items-center">
+              <p className="mb-4">
+                Due to browser limitations, the CV cannot be displayed directly
+                on mobile devices. Please click the button below to download the
+                CV:
+              </p>
+              <a
+                href={`${process.env.PUBLIC_URL}/CV_Anssi_Peltola.pdf`}
+                download
+                className="mt-4 bg-customOrange text-white px-4 py-2 rounded shadow-md transition-colors duration-300 hover:bg-orange-600"
+              >
+                Download CV
+              </a>
+            </div>
+          ) : (
+            <iframe
+              src={`${process.env.PUBLIC_URL}/CV_Anssi_Peltola.pdf`}
+              width="100%"
+              height="100%"
+              className="flex-grow"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+            ></iframe>
+          )}
         </div>
       </div>
     </div>

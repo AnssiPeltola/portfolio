@@ -1,3 +1,17 @@
+/* App.css */
+html {
+  scroll-behavior: smooth;
+}
+
+.full-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
 .App {
   text-align: center;
 }
@@ -36,6 +50,7 @@
     transform: rotate(360deg);
   }
 }
+
 .project {
   position: relative;
   padding: 1.5rem;
@@ -90,76 +105,4 @@
 .border-gradient > * {
   position: relative;
   z-index: 2;
-}
-html {
-  scroll-behavior: smooth;
-}
-
-.full-page {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-
-.arrow-down,
-.arrow-up {
-  position: absolute;
-  bottom: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  background-color: #ffa500;
-  color: white;
-  border-radius: 50%;
-  cursor: pointer;
-  font-size: 24px;
-  transition: background-color 0.3s;
-}
-
-.arrow-up {
-  top: 20px;
-  bottom: auto;
-}
-
-.arrow-down:hover,
-.arrow-up:hover {
-  background-color: #ff8c00;
-}
-
-.arrow-right {
-  position: absolute;
-  right: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  background-color: #ffa500;
-  color: white;
-  border-radius: 50%;
-  cursor: pointer;
-  font-size: 24px;
-  transition: background-color 0.3s;
-}
-
-.arrow-right:hover {
-  background-color: #ff8c00;
-}
-
-@media (max-width: 767px) {
-  .full-page {
-    height: auto;
-    display: block;
-  }
-
-  .arrow-right {
-    display: none;
-  }
 }

@@ -12,6 +12,9 @@ module.exports = {
         plumpPurple: "#1a1033",
         customOrange: "#FFA500",
       },
+      screens: {
+        "custom-lg": "1350px",
+      },
       fontFamily: {
         rubik: ["Rubik", "sans-serif"],
       },

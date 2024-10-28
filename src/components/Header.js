@@ -40,7 +40,7 @@ const Header = () => {
       >
         <div className="flex justify-between items-center p-2 md:p-4">
           <div className="flex space-x-2 md:space-x-4">
-            <div className="hidden md:flex space-x-2 md:space-x-4">
+            <div className="hidden custom-lg:flex space-x-2 md:space-x-4">
               <button
                 className="bg-customOrange text-white px-2 py-1 md:px-4 md:py-2 rounded shadow-md transition-colors duration-300 hover:bg-orange-600"
                 onClick={openCVModal}
@@ -54,8 +54,8 @@ const Header = () => {
                 Contact me!
               </button>
             </div>
-            <div className="md:hidden">
-              <PopupState variant="popover" popupId="demo-popup-menu">
+            <div className="custom-lg:hidden">
+              <PopupState variant="popover" popupId="popup-menu">
                 {(popupState) => (
                   <>
                     <Button
@@ -75,6 +75,14 @@ const Header = () => {
                     </Button>
                     <Menu
                       {...bindMenu(popupState)}
+                      anchorOrigin={{
+                        vertical: "bottom",
+                        horizontal: "right",
+                      }}
+                      transformOrigin={{
+                        vertical: "top",
+                        horizontal: "right",
+                      }}
                       PaperProps={{
                         style: {
                           width: "120px",
