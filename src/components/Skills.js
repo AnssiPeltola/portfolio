@@ -3,6 +3,7 @@ import { FaCode, FaTools, FaCloud } from "react-icons/fa";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 import Tooltip from "@mui/material/Tooltip";
+import useIntersectionObserver from "../hooks/useIntersectionObserver";
 
 const getProficiencyLabel = (level) => {
   if (level >= 96) return "Expert";
@@ -50,6 +51,10 @@ const SkillCard = ({ icon, title, skills }) => (
 );
 
 const Skills = () => {
+  const [ref, isIntersecting] = useIntersectionObserver({
+    threshold: 0.1,
+  });
+
   const skillsData = [
     {
       icon: <FaCode className="text-2xl" />,
@@ -102,7 +107,10 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="my-8 p-4 text-white mx-auto w-3/4 relative z-20"
+      ref={ref}
+      className={`my-8 p-4 text-white mx-auto w-3/4 relative transition-opacity duration-1000 ${
+        isIntersecting ? "fade-in-up" : "opacity-0"
+      }`}
     >
       <h1 className="text-3xl font-bold text-center mb-8">Skills</h1>
       <div className="flex flex-wrap justify-center gap-8">

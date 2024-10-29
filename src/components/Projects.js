@@ -1,11 +1,19 @@
 import React from "react";
 import { FaExternalLinkAlt } from "react-icons/fa";
+import useIntersectionObserver from "../hooks/useIntersectionObserver";
 
 const Projects = () => {
+  const [ref, isIntersecting] = useIntersectionObserver({
+    threshold: 0.1,
+  });
+
   return (
     <section
       id="projects"
-      className="mt-8 p-4 text-white mx-auto w-3/4 relative z-20"
+      ref={ref}
+      className={`mt-8 p-4 text-white mx-auto w-3/4 relative transition-opacity duration-1000 ${
+        isIntersecting ? "fade-in-up" : "opacity-0"
+      }`}
     >
       <h1 className="text-3xl font-bold text-center mb-8">Projects</h1>
       <a
