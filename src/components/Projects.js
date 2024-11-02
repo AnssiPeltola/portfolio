@@ -53,6 +53,27 @@ const Projects = () => {
         </div>
       </a>
       <a
+        href="https://github.com/AnssiPeltola/LunchDiscordBot"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="block"
+      >
+        <div className="project bg-plumpPurple p-6 rounded-lg shadow-lg mt-4 transform hover:scale-105 transition duration-300">
+          <h2 className="text-2xl">LunchDiscordBot</h2>
+          <p>
+            LunchDiscordBot is a Discord bot created to fetch and post the daily
+            and weekly lunch menus specifically for TPA Mortteli, the cafeteria
+            at SASKY Tampereen palvelualan ammattiopisto. The bot automatically
+            posts the daily menu every morning at 9 AM and allows users to fetch
+            the menu on demand using slash commands. Additionally, it includes a
+            sleep mode feature to disable menu posting during vacation periods.
+          </p>
+          <div className="text-white font-bold flex items-center justify-center relative z-10 mt-4">
+            Repository Link <FaExternalLinkAlt className="ml-2" />
+          </div>
+        </div>
+      </a>
+      <a
         href="https://github.com/AnssiPeltola/League-of-Legends-Random-Champions-Spin-Wheel"
         target="_blank"
         rel="noopener noreferrer"
