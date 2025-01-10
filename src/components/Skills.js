@@ -70,6 +70,7 @@ const Skills = () => {
         { name: "Redux", level: 75 },
         { name: "REST API", level: 85 },
         { name: "Python", level: 60 },
+        { name: "Django", level: 60 },
         { name: "Flutter", level: 60 },
         { name: "C#", level: 70 },
         { name: "Angular", level: 75 },
@@ -92,7 +93,6 @@ const Skills = () => {
         { name: "Flyway", level: 80 },
         { name: "DBeaver", level: 75 },
         { name: "Postman", level: 85 },
-        { name: "Redis", level: 70 },
         { name: "CMD", level: 80 },
         { name: "Dev Console", level: 85 },
         { name: "Firebase", level: 75 },
@@ -106,6 +106,7 @@ const Skills = () => {
         { name: "Firebase", level: 75 },
         { name: "Boomi", level: 50 },
         { name: "WebSocket", level: 65 },
+        { name: "Redis", level: 70 },
       ],
     },
   ];
