@@ -25,10 +25,17 @@ const Projects = () => {
         <div className="project bg-plumpPurple p-6 rounded-lg shadow-lg mt-4 transform hover:scale-105 transition duration-300">
           <h2 className="text-2xl">Recipe Sharing Platform (React)</h2>
           <p>
-            A full-stack web application using React, TypeScript, Node.js,
-            PostgreSQL, and Passport-JWT for authentication. Users can create,
-            share, and explore recipes with a responsive and user-friendly
-            interface.
+            A full-stack web application for food lovers to create, share, and
+            discover recipes. Built with React, TypeScript, Redux, Node.js, and
+            PostgreSQL, this platform allows users to manage their own recipes
+            and engage with a growing community.
+          </p>
+          <br />
+          <p>
+            Features include user authentication, profile management, recipe
+            management, advanced search and sorting, favorites, comments,
+            efficient pagination, RecipeSwiper, filter options, top recipes of
+            the week, and ingredient search using the OpenFoodFacts API.
           </p>
           <div className="text-white font-bold flex items-center justify-center relative z-10 mt-4">
             Repository Link <FaExternalLinkAlt className="ml-2" />
