@@ -17,6 +17,30 @@ const Projects = () => {
     >
       <h1 className="text-3xl font-bold text-center mb-8">Projects</h1>
       <a
+        href="https://github.com/AnssiPeltola/TrackDuel"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="block"
+      >
+        <div className="project bg-plumpPurple p-6 rounded-lg shadow-lg mt-4 transform hover:scale-105 transition duration-300">
+          <h2 className="text-2xl">TrackDuel (React)</h2>
+          <p>
+            A music discovery platform built with React that enables users to
+            discover new music through head-to-head song battles. Users vote for
+            their preferred tracks, building a personalized collection that can
+            be exported directly to Spotify as a playlist.
+          </p>
+          <p>
+            Features include Spotify API integration, embedded music players,
+            playlist creation and management, interactive onboarding for new
+            users, and a Spotify-inspired UI for intuitive navigation.
+          </p>
+          <div className="text-white font-bold flex items-center justify-center relative z-10 mt-4">
+            Repository Link <FaExternalLinkAlt className="ml-2" />
+          </div>
+        </div>
+      </a>
+      <a
         href="https://github.com/AnssiPeltola/ReactRecipeSharingPlatform"
         target="_blank"
         rel="noopener noreferrer"
