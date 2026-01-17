@@ -94,7 +94,7 @@ const ContactMeModal = ({ isOpen, onClose }) => {
                   Address
                 </h2>
                 <p className="mt-2 text-sm text-customOrange">
-                  Itsenäisyydenkatu 18 A7, 33500 Tampere, Finland
+                  Siirtolapuutarhankatu, 33900 Tampere, Finland
                 </p>
               </div>
               <div>
@@ -123,7 +123,7 @@ const ContactMeModal = ({ isOpen, onClose }) => {
                 width="100%"
                 height="100%"
                 title="map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d951.9307855102961!2d23.784574139140428!3d61.49861417383124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468edf5673cdeeef%3A0x54bfcf1c76b810ed!2sItsen%C3%A4isyydenkatu%2018%2C%2033500%20Tampere!5e0!3m2!1sfi!2sfi!4v1693223567084!5m2!1sfi!2sfi"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1904.9120401499938!2d23.759294878245193!3d61.48144713693386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468edf4a6283c6e3%3A0xb297c702a4d72102!2sSiirtolapuutarhankatu%2C%2033900%20Tampere!5e0!3m2!1sfi!2sfi!4v1768655095448!5m2!1sfi!2sfi"
                 allowFullScreen=""
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"

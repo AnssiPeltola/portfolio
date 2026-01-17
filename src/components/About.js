@@ -50,9 +50,13 @@ const About = () => {
       <p className="mt-2">
         After nearly a decade in the culinary industry, I transitioned into
         software development to pursue my passion for technology and
-        problem-solving. My experience spans modern front-end and back-end
-        technologies, and I thrive in collaborative, Agile-driven environments
-        that focus on meaningful, real-world solutions.
+        problem-solving. Since fall 2025, I have been pursuing a
+        <strong> Bachelor of Business Administration (BBA) in Information Systems</strong> at
+        Tampere University of Applied Sciences (TAMK), which complements my
+        hands-on experience and helps me deepen my understanding of modern
+        software development practices. My experience spans front-end and
+        back-end technologies, and I thrive in collaborative, Agile-driven
+        environments that focus on meaningful, real-world solutions.
       </p>
       <p className="mt-2">
         Currently, I'm focusing on developing a full-stack recipe-sharing
