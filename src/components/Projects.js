@@ -17,6 +17,22 @@ const Projects = () => {
     >
       <h1 className="text-3xl font-bold text-center mb-8">Projects</h1>
       <a
+        href="https://github.com/AnssiPeltola/WalkJournal"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="block"
+      >
+        <div className="project bg-plumpPurple p-6 rounded-lg shadow-lg mt-4 transform hover:scale-105 transition duration-300">
+          <h2 className="text-2xl">WalkJournal (Next.js)</h2>
+          <p>
+            A full‑stack walking tracker that logs sessions, visualizes weekly/monthly distance trends, and maps your journey progress. Built with Next.js, TypeScript, Tailwind CSS, Leaflet, and SQLite, it combines dashboards, heatmaps, and route timelines to make long‑term walking progress easy to see and update.
+          </p>
+          <div className="text-white font-bold flex items-center justify-center relative z-10 mt-4">
+            Repository Link <FaExternalLinkAlt className="ml-2" />
+          </div>
+        </div>
+      </a>
+      <a
         href="https://github.com/AnssiPeltola/TrackDuel"
         target="_blank"
         rel="noopener noreferrer"

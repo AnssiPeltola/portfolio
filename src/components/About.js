@@ -58,13 +58,6 @@ const About = () => {
         back-end technologies, and I thrive in collaborative, Agile-driven
         environments that focus on meaningful, real-world solutions.
       </p>
-      <p className="mt-2">
-        Currently, I'm focusing on developing a full-stack recipe-sharing
-        platform with React that allows users to create, modify, and share their
-        favorite recipes. My experience includes working on various personal
-        projects, internships, and client work, giving me a strong foundation in
-        creating scalable and responsive web applications.
-      </p>
       <h2 className="text-2xl font-bold mt-4">Experience</h2>
       <p className="mt-2">
         <strong>Devolution (Trainee):</strong> Developed a web-based version of
