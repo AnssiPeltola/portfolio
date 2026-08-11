@@ -2,6 +2,73 @@ import React from "react";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import useIntersectionObserver from "../hooks/useIntersectionObserver";
 
+const projects = [
+  {
+    title: "BeerDex",
+    subtitle: "Beer Catalog & Collection",
+    href: "https://github.com/AnssiPeltola/BeerDex",
+    description:
+      "A full-stack beer catalog and collection web application where users can browse beers, maintain personal collections, and contribute new beers, breweries, and beer styles through a moderation workflow.",
+    tech: "Next.js · React · TypeScript · PostgreSQL · Drizzle ORM · NextAuth · Sharp · Cloudinary",
+  },
+  {
+    title: "GraffSnap",
+    subtitle: "Graffiti Sighting Tracker",
+    href: "https://github.com/AnssiPeltola/GraffSnap",
+    description:
+      "A mobile-first web application for tracking and documenting graffiti sightings. Users can explore sightings on an interactive map, while authenticated users can add new locations with photos, notes, and device location data.",
+    tech: "Next.js · React · TypeScript · PostgreSQL · Drizzle ORM · Leaflet · Neon · Cloudinary · Vercel",
+  },
+  {
+    title: "Recipe Sharing Platform",
+    subtitle: "Full-Stack Recipe Platform",
+    href: "https://github.com/AnssiPeltola/ReactRecipeSharingPlatform",
+    description:
+      "A full-stack recipe-sharing platform where users can create, discover, and manage recipes while interacting with a growing community. Features include authentication, profiles, favorites, comments, advanced search, filtering, pagination, RecipeSwiper, and OpenFoodFacts ingredient search.",
+    tech: "React · TypeScript · Redux · Node.js · PostgreSQL · JWT Authentication",
+  },
+  {
+    title: "WalkJournal",
+    subtitle: "Walking Tracker",
+    href: "https://github.com/AnssiPeltola/WalkJournal",
+    description:
+      "A full-stack walking tracker that logs sessions, visualizes weekly and monthly walking trends, and maps long-term progress through interactive maps, heatmaps, route timelines, and progress dashboards.",
+    tech: "Next.js · TypeScript · Tailwind CSS · Leaflet · SQLite",
+  },
+  {
+    title: "TrackDuel",
+    subtitle: "Music Discovery Platform",
+    href: "https://github.com/AnssiPeltola/TrackDuel",
+    description:
+      "A React-based music discovery platform where users discover new music through head-to-head song battles, build personalized collections, and export selected tracks directly to Spotify playlists.",
+    tech: "React · JavaScript · Spotify API",
+  },
+  {
+    title: "MeetUpHelper",
+    subtitle: "Group Calendar",
+    href: "https://github.com/AnssiPeltola/MeetUpHelper",
+    description:
+      "A group calendar application for organizing events and meetups, combining shared calendars with group chat functionality, real-time notifications, event management, and Dockerized backend services.",
+    tech: "Flutter · Dart · Django · Python · PostgreSQL · WebSocket · Docker",
+  },
+  {
+    title: "Weather Finder",
+    subtitle: "Weather Application",
+    href: "https://github.com/AnssiPeltola/ReactWeatherFinder",
+    description:
+      "A React weather application that uses the OpenWeather API to provide weather forecasts for cities around the world.",
+    tech: "React · JavaScript · OpenWeather API",
+  },
+  {
+    title: "Lunch Discord Bot",
+    subtitle: "Automated Lunch Menu Bot",
+    href: "https://github.com/AnssiPeltola/LunchDiscordBot",
+    description:
+      "A Discord bot that automatically fetches and posts daily and weekly lunch menus for TPA Mortteli. It supports scheduled menu posting, slash commands, and a vacation sleep mode.",
+    tech: "Python · Discord API",
+  },
+];
+
 const Projects = () => {
   const [ref, isIntersecting] = useIntersectionObserver({
     threshold: 0.1,
@@ -16,152 +83,35 @@ const Projects = () => {
       }`}
     >
       <h1 className="text-3xl font-bold text-center mb-8">Projects</h1>
-      <a
-        href="https://github.com/AnssiPeltola/WalkJournal"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="block"
-      >
-        <div className="project bg-plumpPurple p-6 rounded-lg shadow-lg mt-4 transform hover:scale-105 transition duration-300">
-          <h2 className="text-2xl">WalkJournal (Next.js)</h2>
-          <p>
-            A full‑stack walking tracker that logs sessions, visualizes weekly/monthly distance trends, and maps your journey progress. Built with Next.js, TypeScript, Tailwind CSS, Leaflet, and SQLite, it combines dashboards, heatmaps, and route timelines to make long‑term walking progress easy to see and update.
-          </p>
-          <div className="text-white font-bold flex items-center justify-center relative z-10 mt-4">
-            Repository Link <FaExternalLinkAlt className="ml-2" />
-          </div>
-        </div>
-      </a>
-      <a
-        href="https://github.com/AnssiPeltola/TrackDuel"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="block"
-      >
-        <div className="project bg-plumpPurple p-6 rounded-lg shadow-lg mt-4 transform hover:scale-105 transition duration-300">
-          <h2 className="text-2xl">TrackDuel (React)</h2>
-          <p>
-            A music discovery platform built with React that enables users to
-            discover new music through head-to-head song battles. Users vote for
-            their preferred tracks, building a personalized collection that can
-            be exported directly to Spotify as a playlist.
-          </p>
-          <p>
-            Features include Spotify API integration, embedded music players,
-            playlist creation and management, interactive onboarding for new
-            users, and a Spotify-inspired UI for intuitive navigation.
-          </p>
-          <div className="text-white font-bold flex items-center justify-center relative z-10 mt-4">
-            Repository Link <FaExternalLinkAlt className="ml-2" />
-          </div>
-        </div>
-      </a>
-      <a
-        href="https://github.com/AnssiPeltola/ReactRecipeSharingPlatform"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="block"
-      >
-        <div className="project bg-plumpPurple p-6 rounded-lg shadow-lg mt-4 transform hover:scale-105 transition duration-300">
-          <h2 className="text-2xl">Recipe Sharing Platform (React)</h2>
-          <p>
-            A full-stack web application for food lovers to create, share, and
-            discover recipes. Built with React, TypeScript, Redux, Node.js, and
-            PostgreSQL, this platform allows users to manage their own recipes
-            and engage with a growing community.
-          </p>
-          <br />
-          <p>
-            Features include user authentication, profile management, recipe
-            management, advanced search and sorting, favorites, comments,
-            efficient pagination, RecipeSwiper, filter options, top recipes of
-            the week, and ingredient search using the OpenFoodFacts API.
-          </p>
-          <div className="text-white font-bold flex items-center justify-center relative z-10 mt-4">
-            Repository Link <FaExternalLinkAlt className="ml-2" />
-          </div>
-        </div>
-      </a>
-      <a
-        href="https://github.com/AnssiPeltola/MeetUpHelper"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="block"
-      >
-        <div className="project bg-plumpPurple p-6 rounded-lg shadow-lg mt-4 transform hover:scale-105 transition duration-300">
-          <h2 className="text-2xl">MeetUpHelper (Flutter)</h2>
-          <p>
-            MeetUpHelper is a calendar group app designed to help you organize
-            and manage events within groups. You can create calendar groups,
-            invite people, allow all group members to add their own events, and
-            a group chat feature for planning meetups. The app uses Flutter for
-            the frontend and Django for the backend, with PostgreSQL as the
-            database. Real-time communication is handled using Django Channels
-            and Redis, backend contained within Docker.
-          </p>
-          <div className="text-white font-bold flex items-center justify-center relative z-10 mt-4">
-            Repository Link <FaExternalLinkAlt className="ml-2" />
-          </div>
-        </div>
-      </a>
-      <a
-        href="https://github.com/AnssiPeltola/ReactWeatherFinder"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="block"
-      >
-        <div className="project bg-plumpPurple p-6 rounded-lg shadow-lg mt-4 transform hover:scale-105 transition duration-300">
-          <h2 className="text-2xl">Weather Finder App (React)</h2>
-          <p>
-            A weather forecasting app built with React, utilizing the
-            OpenWeather API to fetch weather data for cities worldwide.
-          </p>
-          <div className="text-white font-bold flex items-center justify-center relative z-10 mt-4">
-            Repository Link <FaExternalLinkAlt className="ml-2" />
-          </div>
-        </div>
-      </a>
-      <a
-        href="https://github.com/AnssiPeltola/LunchDiscordBot"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="block"
-      >
-        <div className="project bg-plumpPurple p-6 rounded-lg shadow-lg mt-4 transform hover:scale-105 transition duration-300">
-          <h2 className="text-2xl">LunchDiscordBot (JavaScript)</h2>
-          <p>
-            LunchDiscordBot is a Discord bot created to fetch and post the daily
-            and weekly lunch menus specifically for TPA Mortteli, the cafeteria
-            at SASKY Tampereen palvelualan ammattiopisto. The bot automatically
-            posts the daily menu every morning at 9 AM and allows users to fetch
-            the menu on demand using slash commands. Additionally, it includes a
-            sleep mode feature to disable menu posting during vacation periods.
-          </p>
-          <div className="text-white font-bold flex items-center justify-center relative z-10 mt-4">
-            Repository Link <FaExternalLinkAlt className="ml-2" />
-          </div>
-        </div>
-      </a>
 
-      <a
-        href="https://github.com/AnssiPeltola/League-of-Legends-Random-Champions-Spin-Wheel"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="block"
-      >
-        <div className="project bg-plumpPurple p-6 rounded-lg shadow-lg mt-4 transform hover:scale-105 transition duration-300">
-          <h2 className="text-2xl">
-            League of Legends Random Champion Spin Wheel (JavaScript)
-          </h2>
-          <p>
-            An interactive web app using the LoL Champion API to randomly select
-            champions. Built with JavaScript and Winwheel.js.
-          </p>
-          <div className="text-white font-bold flex items-center justify-center relative z-10 mt-4">
-            Repository Link <FaExternalLinkAlt className="ml-2" />
-          </div>
-        </div>
-      </a>
+      <div className="space-y-4">
+        {projects.map((project) => (
+          <a
+            key={project.title}
+            href={project.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block"
+          >
+            <div className="project bg-plumpPurple p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+              <h2 className="text-2xl font-semibold">{project.title}</h2>
+
+              <p className="text-lg mb-3">{project.subtitle}</p>
+
+              <p>{project.description}</p>
+
+              <p className="mt-4">
+                <span className="font-bold">Tech stack:</span> {project.tech}
+              </p>
+
+              <div className="text-white font-bold flex items-center justify-center relative z-10 mt-4">
+                Repository Link
+                <FaExternalLinkAlt className="ml-2" />
+              </div>
+            </div>
+          </a>
+        ))}
+      </div>
     </section>
   );
 };

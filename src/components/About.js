@@ -15,6 +15,7 @@ const About = () => {
                 d="M 60, 120 Q 200, 10 340, 120"
                 fill="transparent"
               />
+
               <text width="400" className="text-white text-2xl font-bold">
                 <textPath
                   xlinkHref="#curve"
@@ -31,45 +32,72 @@ const About = () => {
           <div className="w-48 h-48 md:w-96 md:h-96 mt-10 z-10 relative mx-auto">
             <img
               src={`${process.env.PUBLIC_URL}/profile.png`}
-              alt="Profile"
-              class="w-full h-full rounded-full object-cover"
+              alt="Anssi Peltola"
+              className="w-full h-full rounded-full object-cover"
             />
           </div>
         </div>
       </div>
-      <p className="mt-2">
-        I'm a software developer based in Tampere, Finland, with a diverse
-        background in full-stack development and a passion for delivering
-        innovative solutions. My focus is on building robust and scalable web
-        applications, and I’m best with{" "}
-        <strong>React, TypeScript, Node.js, and PostgreSQL.</strong> I'm always
-        eager to learn and apply new technologies to enhance my skills and
-        create impactful projects.
+
+      <p className="mt-4">
+        I'm a software developer and Information Systems student based in
+        Tampere, Finland. I enjoy turning ideas into working software, solving
+        interesting problems, and learning new technologies along the way. My
+        main interests are{" "}
+        <strong>
+          full-stack development, web development, and software engineering.
+        </strong>
       </p>
-      <h2 className="text-2xl font-bold mt-4">About Me</h2>
-      <p className="mt-2">
-        After nearly a decade in the culinary industry, I transitioned into
-        software development to pursue my passion for technology and
-        problem-solving. Since fall 2025, I have been pursuing a
-        <strong> Bachelor of Business Administration (BBA) in Information Systems</strong> at
-        Tampere University of Applied Sciences (TAMK), which complements my
-        hands-on experience and helps me deepen my understanding of modern
-        software development practices. My experience spans front-end and
-        back-end technologies, and I thrive in collaborative, Agile-driven
-        environments that focus on meaningful, real-world solutions.
+
+      <p className="mt-3">
+        I work across modern frontend and backend technologies including React,
+        Next.js, TypeScript, Node.js, PostgreSQL, and cloud and integration
+        services. I enjoy building practical applications where frontend
+        experiences, APIs, databases, authentication, and external services come
+        together as one complete product.
       </p>
-      <h2 className="text-2xl font-bold mt-4">Experience</h2>
+
+      <h2 className="text-2xl font-bold mt-6">About Me</h2>
+
       <p className="mt-2">
-        <strong>Devolution (Trainee):</strong> Developed a web-based version of
-        a mobile app using React, TypeScript, and Firebase, serving as Scrum
-        Master for a four-member team. I led sprint planning and team
-        communication, gaining hands-on experience in Agile methodologies.
+        Before moving into software development, I spent nearly a decade working
+        in the culinary industry. That background taught me how to work under
+        pressure, collaborate with different people, solve problems quickly, and
+        take responsibility for the quality of my work.
       </p>
+
+      <p className="mt-3">
+        I later transitioned into software development to pursue my interest in
+        technology and problem-solving. Since fall 2025, I have been studying
+        for a{" "}
+        <strong>
+          Bachelor of Business Administration in Information Systems
+        </strong>{" "}
+        at Tampere University of Applied Sciences (TAMK), combining formal
+        studies with hands-on software projects and professional experience.
+      </p>
+
+      <p className="mt-3">
+        I enjoy working in collaborative environments and continuously improving
+        the way I build software, including the use of modern development tools
+        and AI-assisted workflows for debugging, refactoring, research, and
+        development.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-6">Experience</h2>
+
       <p className="mt-2">
-        <strong>Gavon (Trainee):</strong> Contributed to game development using
-        Phaser 3, Angular, TypeScript, and PostgreSQL. I gained practical skills
-        in database management, REST API development, and handling real-time
-        data.
+        <strong>Devolution - Trainee:</strong> Developed a web-based version of
+        a mobile application using React, TypeScript, and Firebase as part of a
+        four-person Agile team. I also served as Scrum Master, helping
+        coordinate sprint planning, development work, and team communication.
+      </p>
+
+      <p className="mt-3">
+        <strong>Gavon - Trainee:</strong> Contributed to a web-based application
+        using Angular, TypeScript, Phaser 3, and PostgreSQL. My work included
+        REST API integration, database management, and real-time data handling
+        as part of a development team.
       </p>
     </section>
   );

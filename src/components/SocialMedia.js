@@ -2,13 +2,10 @@ import React, { useState } from "react";
 
 const SocialMedia = () => {
   const [githubLogo, setGithubLogo] = useState(
-    `${process.env.PUBLIC_URL}/github-mark-white.png`
-  );
-  const [facebookLogo, setFacebookLogo] = useState(
-    `${process.env.PUBLIC_URL}/f_logo_RGB-White_58.png`
+    `${process.env.PUBLIC_URL}/github-mark-white.png`,
   );
   const [linkedinLogo, setLinkedinLogo] = useState(
-    `${process.env.PUBLIC_URL}/In-White-72.png`
+    `${process.env.PUBLIC_URL}/In-White-72.png`,
   );
 
   return (
@@ -27,17 +24,6 @@ const SocialMedia = () => {
           }
         >
           <img src={githubLogo} alt="GitHub Logo" className="w-8 h-8" />
-        </a>
-        <a
-          href="https://www.facebook.com/anssi.peltola/"
-          onMouseEnter={() =>
-            setFacebookLogo(`${process.env.PUBLIC_URL}/f_logo_RGB-Black_58.png`)
-          }
-          onMouseLeave={() =>
-            setFacebookLogo(`${process.env.PUBLIC_URL}/f_logo_RGB-White_58.png`)
-          }
-        >
-          <img src={facebookLogo} alt="Facebook Logo" className="w-8 h-8" />
         </a>
         <a
           href="https://www.linkedin.com/in/anssi-peltola-363255107/"
